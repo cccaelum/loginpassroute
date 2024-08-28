@@ -10,9 +10,6 @@ const PORT = 4000;
 const middlewares = require('./middlewares');
 const routes = require('./routes');
 
-routes.setup(app);
-middlewares.setupAPP(app);
-
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(session({
@@ -20,6 +17,9 @@ app.use(session({
     resave: false,
     saveUninitialized: true,
   }));
+
+middlewares.setupAPP(app);
+routes.setup(app);
 
 app.listen(PORT, () => {
     console.log(`Servidor en ejecución en http://localhost:${PORT}`);

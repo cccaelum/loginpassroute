@@ -27,7 +27,7 @@ Almaceno en una variable lo que hay dentro del archivo 'middlewares' par apoder 
 
 
 ## Sabiendo todo esto, ¿Qué tengo que hacer?
-Fácil, cogeréis cada trozo de código que se dividirá entre `app.js`, `middlewares.js` y `routes.js`. Una vez hecho lanzarás lanzarás la aplicación y vermos si funciona o no ;).
+Fácil, cogeréis cada trozo de código que se dividirá entre `app.js`, `middlewares.js` y `routes.js`. Una vez hecho lanzarás lanzarás la aplicación y vermos si funciona o no ;.
 
 ## CONSEJOS
 - Comienza por lo sencillo. Como inicializar el servidor, requerir express, ...
